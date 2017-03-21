@@ -23,7 +23,8 @@ if [ $OPTION = "1" ]; then # Set: HDMI Video & Audio
 	
 	# Video setup
 	cp -a files/hdmi/script.bin /boot/script.bin
-	sed -i '/tv/d' /etc/modules
+	sed -i '/tv/d' /etc/modules # Delete "tv" line
+	sed -i '/^ *$/d' /etc/modules # Delete empty lines
 	
 	# Audio setup
 	cp -a files/hdmi/bgmusic.py /home/pi/RetroPie/music/bgmusic.py
@@ -37,6 +38,8 @@ elif [ $OPTION = "2" ]; then # Set: RCA Video & Audio
 	
 	# Video setup
 	cp -a files/rca/script.bin /boot/script.bin
+	sed -i '/tv/d' /etc/modules # Delete "tv" line
+	sed -i '/^ *$/d' /etc/modules # Delete empty lines
 	echo "tv" >> /etc/modules
 	
 	# Audio setup
@@ -53,7 +56,8 @@ elif [ $OPTION = "3" ]; then # Set: HDMI Video. RCA Audio
 	
 	# Video setup
 	cp -a files/hdmi/script.bin /boot/script.bin
-	sed -i '/tv/d' /etc/modules
+	sed -i '/tv/d' /etc/modules # Delete "tv" line
+	sed -i '/^ *$/d' /etc/modules # Delete empty lines
 	
 	# Audio setup
 	cp -a /home/pi/RetroPie/music/bgmusic.py /home/pi/RetroPie/music/bgmusic_disable.py
@@ -69,6 +73,8 @@ elif [ $OPTION = "4" ]; then # Set: RCA Video. HDMI Audio
 	
 	# Video setup
 	cp -a files/rca/script.bin /boot/script.bin
+	sed -i '/tv/d' /etc/modules # Delete "tv" line
+	sed -i '/^ *$/d' /etc/modules # Delete empty lines
 	echo "tv" >> /etc/modules
 	
 	# Audio setup
@@ -85,9 +91,9 @@ fi
 # Need Reboot Screen. Do It?
 whiptail --title "BashTool_ROPI_RCA" --msgbox "Configuration applied" 10 55 5
 if (whiptail --title "BashTool_ROPI_RCA" --yesno "It is necessary reboot the system. Reboot now?" 8 78) then
-	# Yes
+    # Yes
 	reboot
 else
 	# No
-	exit
+    exit
 fi
