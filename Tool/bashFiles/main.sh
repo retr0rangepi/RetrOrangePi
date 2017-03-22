@@ -13,7 +13,6 @@ OPTION=$(whiptail --title "BashTool_ROPI_RCA" --menu "Choose an option" 15 60 0 
 	"1" "HDMI Video & Audio. RCA Disabled" \
 	"2" "RCA Video & Audio. HDMI Disabled" \
 	"3" "HDMI Video. RCA Audio" \
-	"4" "RCA Video. HDMI Audio" \
 	3>&1 1>&2 2>&3)
 
 # Manage Option Selected. Configure System Video & Audio Output
@@ -67,22 +66,6 @@ elif [ $OPTION = "3" ]; then # Set: HDMI Video. RCA Audio
 	cp -a files/rca/asoundrc /home/pi/.asoundrc
 	amixer -c 0 set "Audio lineout" unmute
 
-elif [ $OPTION = "4" ]; then # Set: RCA Video. HDMI Audio
-	echo "Configuring, please wait..."
-	sleep 2
-	
-	# Video setup
-	cp -a files/rca/script.bin /boot/script.bin
-	sed -i '/tv/d' /etc/modules # Delete "tv" line
-	sed -i '/^ *$/d' /etc/modules # Delete empty lines
-	echo "tv" >> /etc/modules
-	
-	# Audio setup
-	cp -a files/hdmi/bgmusic.py /home/pi/RetroPie/music/bgmusic.py
-	cp -a files/hdmi/retroarch.cfg /opt/retropie/configs/all/retroarch.cfg
-	cp -a files/hdmi/asound.conf /etc/asound.conf
-	cp -a files/hdmi/asoundrc /home/pi/.asoundrc
-	
 else
 	echo "Tool Error"
 	exit
