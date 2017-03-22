@@ -30,7 +30,7 @@ if [ $OPTION = "1" ]; then # Set: HDMI Video & Audio
 	cp -a files/hdmi/bgmusic.py /home/pi/RetroPie/music/bgmusic.py
 	cp -a files/hdmi/retroarch.cfg /opt/retropie/configs/all/retroarch.cfg
 	cp -a files/hdmi/asound.conf /etc/asound.conf
-	cp -a files/hdmi/asoundrc ~/.asoundrc
+	cp -a files/hdmi/asoundrc /home/pi/.asoundrc
 	
 elif [ $OPTION = "2" ]; then # Set: RCA Video & Audio
 	echo "Configuring, please wait..."
@@ -47,7 +47,7 @@ elif [ $OPTION = "2" ]; then # Set: RCA Video & Audio
 	rm -rf /home/pi/RetroPie/music/bgmusic.py
 	cp -a files/rca/retroarch.cfg /opt/retropie/configs/all/retroarch.cfg
 	cp -a files/rca/asound.conf /etc/asound.conf
-	cp -a files/rca/asoundrc ~/.asoundrc
+	cp -a files/rca/asoundrc /home/pi/.asoundrc
 	amixer -c 0 set "Audio lineout" unmute
 
 elif [ $OPTION = "3" ]; then # Set: HDMI Video. RCA Audio
@@ -64,7 +64,7 @@ elif [ $OPTION = "3" ]; then # Set: HDMI Video. RCA Audio
 	rm -rf /home/pi/RetroPie/music/bgmusic.py
 	cp -a files/rca/retroarch.cfg /opt/retropie/configs/all/retroarch.cfg
 	cp -a files/rca/asound.conf /etc/asound.conf
-	cp -a files/rca/asoundrc ~/.asoundrc
+	cp -a files/rca/asoundrc /home/pi/.asoundrc
 	amixer -c 0 set "Audio lineout" unmute
 
 elif [ $OPTION = "4" ]; then # Set: RCA Video. HDMI Audio
@@ -81,7 +81,7 @@ elif [ $OPTION = "4" ]; then # Set: RCA Video. HDMI Audio
 	cp -a files/hdmi/bgmusic.py /home/pi/RetroPie/music/bgmusic.py
 	cp -a files/hdmi/retroarch.cfg /opt/retropie/configs/all/retroarch.cfg
 	cp -a files/hdmi/asound.conf /etc/asound.conf
-	cp -a files/hdmi/asoundrc ~/.asoundrc
+	cp -a files/hdmi/asoundrc /home/pi/.asoundrc
 	
 else
 	echo "Tool Error"
@@ -91,9 +91,9 @@ fi
 # Need Reboot Screen. Do It?
 whiptail --title "BashTool_ROPI_RCA" --msgbox "Configuration applied" 10 55 5
 if (whiptail --title "BashTool_ROPI_RCA" --yesno "It is necessary reboot the system. Reboot now?" 8 78) then
-    # Yes
+	# Yes
 	reboot
 else
 	# No
-    exit
+	exit
 fi
