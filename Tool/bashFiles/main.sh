@@ -24,6 +24,22 @@ FexChange()
 	fi
 }
 
+## Usage: RetrocfgChange <file_path> <key> <value> 
+## Description: Changes the value of a given key (or adds key=value) of retroarch.cfg file
+RetrocfgChange()
+{
+	# Search in file ($1) for key ($2)
+	found=$(sed -n -e "/^$2\s*=/p" "$1")
+  
+	if [ -n "$found" ]; then
+		# Replace in file ($1) key ($2) with value ($3)
+		sed -i -e "s/^\($2\s*=\s*\).*/\1$3/" "$1"
+	else
+		# Append in file ($1) key ($2) with value ($3)
+		sed -i -e "\$a$2 = $3" "$1"
+	fi
+}
+
 #############################
 
 # Menu Screen. Select option
@@ -57,8 +73,8 @@ if [ $OPTION = "1" ]; then # Set: HDMI Video & Audio
 	sed -i '/^ *$/d' /etc/modules # Delete empty lines
 	
 	######## Audio setup
+	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_device' '""'
 	cp -a files/hdmi/bgmusic.py /home/pi/RetroPie/music/bgmusic.py
-	cp -a files/hdmi/retroarch.cfg /opt/retropie/configs/all/retroarch.cfg
 	cp -a files/hdmi/asound.conf /etc/asound.conf
 	cp -a files/hdmi/asoundrc /home/pi/.asoundrc
 	
@@ -85,9 +101,9 @@ elif [ $OPTION = "2" ]; then # Set: RCA Video (PAL) & Audio
 	echo "tv" >> /etc/modules
 	
 	# Audio setup
+	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_device' '"hw:0,0"'
 	cp -a /home/pi/RetroPie/music/bgmusic.py /home/pi/RetroPie/music/bgmusic_disable.py
 	rm -rf /home/pi/RetroPie/music/bgmusic.py
-	cp -a files/rca/retroarch.cfg /opt/retropie/configs/all/retroarch.cfg
 	cp -a files/rca/asound.conf /etc/asound.conf
 	cp -a files/rca/asoundrc /home/pi/.asoundrc
 	amixer -c 0 set "Audio lineout" unmute
@@ -115,9 +131,9 @@ elif [ $OPTION = "3" ]; then # Set: RCA Video (NTSC) & Audio
 	echo "tv" >> /etc/modules
 	
 	# Audio setup
+	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_device' '"hw:0,0"'
 	cp -a /home/pi/RetroPie/music/bgmusic.py /home/pi/RetroPie/music/bgmusic_disable.py
 	rm -rf /home/pi/RetroPie/music/bgmusic.py
-	cp -a files/rca/retroarch.cfg /opt/retropie/configs/all/retroarch.cfg
 	cp -a files/rca/asound.conf /etc/asound.conf
 	cp -a files/rca/asoundrc /home/pi/.asoundrc
 	amixer -c 0 set "Audio lineout" unmute
@@ -144,9 +160,9 @@ elif [ $OPTION = "4" ]; then # Set: HDMI Video. RCA Audio
 	sed -i '/^ *$/d' /etc/modules # Delete empty lines
 	
 	######## Audio setup
+	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_device' '"hw:0,0"'
 	cp -a /home/pi/RetroPie/music/bgmusic.py /home/pi/RetroPie/music/bgmusic_disable.py
 	rm -rf /home/pi/RetroPie/music/bgmusic.py
-	cp -a files/rca/retroarch.cfg /opt/retropie/configs/all/retroarch.cfg
 	cp -a files/rca/asound.conf /etc/asound.conf
 	cp -a files/rca/asoundrc /home/pi/.asoundrc
 	amixer -c 0 set "Audio lineout" unmute
