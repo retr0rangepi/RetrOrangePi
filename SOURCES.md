@@ -1,22 +1,22 @@
-Sources used
+# RetrOrangePi sources 
 
-Main Arm Linux distributions:
+## Main Arm Linux distributions:
 
 1. Armbian Desktop Jessie - Debian images for ARM based single-board computers - https://github.com/armbian/build
 2. OpenELEC - The living room PC for everyone - jernejsk fork (https://github.com/jernejsk/OpenELEC-OPi2)
 
-Drivers and libraries
+## Main drivers and libraries
 
 3. Drivers included in Armbian release - https://github.com/igorpecovnik/lib
 4. Mali400 MP2 modules available in https://github.com/loboris/OrangePI-Kernel 
 5. Mali r4p0 libraries and include files from https://github.com/WhiteWind/sunxi-mali
 
-Components:
+## RetroPie-Setup components:
 
 6. [EmulationStation] (https://github.com/retr0rangepi/EmulationStation) - retropie fork with ROPi flavor
 7. [RetroPie-Setup] (https://github.com/retr0rangepi/RetroPie-Setup) - ROPi H3 Mali fork
 
-Libretro cores
+### Libretro cores
 
 * Amstrad CPC (lr-cap32) 
 * Atari 2600 (Stella), (lr-stella) 
@@ -53,7 +53,7 @@ Libretro cores
 * WonderSwan Color (lr-mednafen-wswan) 
 * ZX Spectrum (lr-fuse) 
 
-Standalone emulators / ports (with small tweaks to work in ARMv7/Mali400)
+### Standalone emulators / ports (with small tweaks to work in ARMv7/Mali400)
 * Amiga (UAE4ARM) 
 * Apple II (Linapple) 
 * Atari 5200 and 8-bit seriesAtari ST/STE/TT/Falcon (Hatari) 
@@ -71,10 +71,10 @@ Standalone emulators / ports (with small tweaks to work in ARMv7/Mali400)
 * XRoar
 * Zelda Engine (Solarus) 
 
-Components
+### RetroPie core 
 
-Retroarch v1.6.7  
-SDL 2.0.5 (with Mali backend) 
+* Retroarch v1.6.7  
+* SDL 2.0.5 (with Mali backend) 
 
 8. Background music -  https://retropie.org.uk/forum/topic/347/background-music-continued-from-help-support/2
 
@@ -91,6 +91,6 @@ Extra content:
 18. Reicast - Dreamcast emulator - https://github.com/reicast/reicast-emulator
 19. Libretro splashscreen - https://github.com/libretro/retroarch-assets/blob/master/branding/retroarch_nologo_bg.png
 
-Documentation
+Documentation - how to get framebuffer working
 20. https://github.com/libretro/RetroArch/blob/master/README-mali_fbdev_r4p0.md
 
