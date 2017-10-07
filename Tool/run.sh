@@ -9,11 +9,12 @@ set -e # No errors allowed
 #############################
 
 # Check no root privileges. The command "id -u" return 0 if the user has root privileges
-if [ "$(id -u)" != "0" ]; then
-	$PWD/bashFiles/init/getRoot.sh # Run the script getRoot.sh to obtain root permission
-fi
+#if [ "$(id -u)" != "0" ]; then
+#	$PWD/bashFiles/init/getRoot.sh # Run the script getRoot.sh to obtain root permission
+#fi
 
 #############################
 
 # Launch main script
+cd ~/RetrOrangePi/BashTool_ROPI_RCA/Tool
 sudo bashFiles/main.sh
