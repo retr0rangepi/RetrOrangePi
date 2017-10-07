@@ -74,7 +74,7 @@ if [ $OPTION = "1" ]; then # Set: HDMI Video & Audio
 	
 	######## Audio setup
 	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_device' '""'
-	cp -a files/hdmi/bgmusic.py /home/pi/RetroPie/music/bgmusic.py
+	#cp -a files/hdmi/bgmusic.py /home/pi/RetroPie/music/bgmusic.py
 	cp -a files/hdmi/asound.conf /etc/asound.conf
 	cp -a files/hdmi/asoundrc /home/pi/.asoundrc
 	
@@ -102,8 +102,8 @@ elif [ $OPTION = "2" ]; then # Set: RCA Video (PAL) & Audio
 	
 	# Audio setup
 	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_device' '"hw:0,0"'
-	cp -a /home/pi/RetroPie/music/bgmusic.py /home/pi/RetroPie/music/bgmusic_disable.py
-	rm -rf /home/pi/RetroPie/music/bgmusic.py
+	#cp -a /home/pi/RetroPie/music/bgmusic.py /home/pi/RetroPie/music/bgmusic_disable.py
+	#rm -rf /home/pi/RetroPie/music/bgmusic.py
 	cp -a files/rca/asound.conf /etc/asound.conf
 	cp -a files/rca/asoundrc /home/pi/.asoundrc
 	amixer -c 0 set "Audio lineout" unmute
@@ -132,8 +132,8 @@ elif [ $OPTION = "3" ]; then # Set: RCA Video (NTSC) & Audio
 	
 	# Audio setup
 	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_device' '"hw:0,0"'
-	cp -a /home/pi/RetroPie/music/bgmusic.py /home/pi/RetroPie/music/bgmusic_disable.py
-	rm -rf /home/pi/RetroPie/music/bgmusic.py
+	#cp -a /home/pi/RetroPie/music/bgmusic.py /home/pi/RetroPie/music/bgmusic_disable.py
+	#rm -rf /home/pi/RetroPie/music/bgmusic.py
 	cp -a files/rca/asound.conf /etc/asound.conf
 	cp -a files/rca/asoundrc /home/pi/.asoundrc
 	amixer -c 0 set "Audio lineout" unmute
@@ -161,8 +161,8 @@ elif [ $OPTION = "4" ]; then # Set: HDMI Video. RCA Audio
 	
 	######## Audio setup
 	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_device' '"hw:0,0"'
-	cp -a /home/pi/RetroPie/music/bgmusic.py /home/pi/RetroPie/music/bgmusic_disable.py
-	rm -rf /home/pi/RetroPie/music/bgmusic.py
+	#cp -a /home/pi/RetroPie/music/bgmusic.py /home/pi/RetroPie/music/bgmusic_disable.py
+	#rm -rf /home/pi/RetroPie/music/bgmusic.py
 	cp -a files/rca/asound.conf /etc/asound.conf
 	cp -a files/rca/asoundrc /home/pi/.asoundrc
 	amixer -c 0 set "Audio lineout" unmute
