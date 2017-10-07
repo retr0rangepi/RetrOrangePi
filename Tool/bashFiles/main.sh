@@ -102,6 +102,7 @@ elif [ $OPTION = "2" ]; then # Set: RCA Video (PAL) & Audio
 	
 	# Audio setup
 	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_device' '"hw:0,0"'
+        RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_driver' '"sdl2"'
 	#cp -a /home/pi/RetroPie/music/bgmusic.py /home/pi/RetroPie/music/bgmusic_disable.py
 	#rm -rf /home/pi/RetroPie/music/bgmusic.py
 	cp -a files/rca/asound.conf /etc/asound.conf
@@ -132,6 +133,7 @@ elif [ $OPTION = "3" ]; then # Set: RCA Video (NTSC) & Audio
 	
 	# Audio setup
 	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_device' '"hw:0,0"'
+        RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_driver' '"sdl2"'
 	#cp -a /home/pi/RetroPie/music/bgmusic.py /home/pi/RetroPie/music/bgmusic_disable.py
 	#rm -rf /home/pi/RetroPie/music/bgmusic.py
 	cp -a files/rca/asound.conf /etc/asound.conf
@@ -161,6 +163,7 @@ elif [ $OPTION = "4" ]; then # Set: HDMI Video. RCA Audio
 	
 	######## Audio setup
 	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_device' '"hw:0,0"'
+        RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_driver' '"sdl2"'
 	#cp -a /home/pi/RetroPie/music/bgmusic.py /home/pi/RetroPie/music/bgmusic_disable.py
 	#rm -rf /home/pi/RetroPie/music/bgmusic.py
 	cp -a files/rca/asound.conf /etc/asound.conf
@@ -174,7 +177,7 @@ fi
 
 # Need Reboot Screen. Do It?
 whiptail --title "BashTool_ROPI_RCA" --msgbox "Configuration applied" 10 55 5
-if (whiptail --title "BashTool_ROPI_RCA" --yesno "It is necessary reboot the system. Reboot now?" 8 78) then
+if (whiptail --title "BashTool_ROPI_RCA" --yesno "It is necessary to reboot the system. Reboot now?" 8 78) then
 	# Yes
 	reboot
 else
