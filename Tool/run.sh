@@ -17,4 +17,4 @@ set -e # No errors allowed
 
 # Launch main script
 cd ~/RetrOrangePi/BashTool_ROPI_RCA/Tool
-sudo bashFiles/main.sh
+sudo bashFiles/main.SH
