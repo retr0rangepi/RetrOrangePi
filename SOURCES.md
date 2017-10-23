@@ -7,7 +7,7 @@
 
 ## Main drivers and libraries
 
-3. Drivers included in Armbian release - https://github.com/igorpecovnik/lib
+3. Drivers included in Armbian release - https://github.com/armbian/build
 4. Mali400 MP2 modules available in https://github.com/loboris/OrangePI-Kernel 
 5. Mali r4p0 libraries and include files from https://github.com/WhiteWind/sunxi-mali
 
@@ -56,16 +56,17 @@
 ### Standalone emulators / ports (with small tweaks to work in ARMv7/Mali400)
 * Amiga (UAE4ARM) 
 * Apple II (Linapple) 
-* Atari 5200 and 8-bit seriesAtari ST/STE/TT/Falcon (Hatari) 
+* Atari 5200 and 8-bit series
+* Atari ST/STE/TT/Falcon (Hatari) 
 * Commodore 64 (Vice) 
-* Daphne  
+* Daphne   
 * Dreamcast (Reicast) 
 * Duke Nukem 3D (Eduke32) 
 * JZINTV
 * OpenBOR (OpenBOR) 
 * OutRun Engine (Cannonball) 
 * Prince of Persia (SDLPoP) 
-* PSP (lr-ppsspp) 
+* Reicast (Dreamcast emulator)
 * Super Mario War (Super Mario War)
 * TI99Sim
 * XRoar
@@ -79,18 +80,11 @@
 8. Background music -  https://retropie.org.uk/forum/topic/347/background-music-continued-from-help-support/2
 
 Extra content: 
-9. AdvanceMAME - https://github.com/amadvance/advancemame/releases/download/v3.0/advancemame_3.0-1_armhf.deb
-10. Amiga FS-UAE gles fork - https://github.com/cnvogelg/fs-uae-gles
-11. ColEm - Colecovision - http://fms.komkon.org/ColEm/
-12. Dosbox 0.74-ES GLES version - https://github.com/aqualung99/dosbox-0.74-ES
-13. Goonies remake - https://github.com/mthuurne/goonies
-14. GPIO controller - based on mk_arcade_joystick https://github.com/ericktarzia/GPIO_controller-for-retrorangepi
-15. Kodi Krypton - master version https://github.com/xbmc/xbmc
-16. OpenMSX - https://github.com/openMSX/openMSX
-17. PPSSPP - http://oph.mdrjr.net/meveric/pool/main/p/ppsspp-odroid/
-18. Reicast - Dreamcast emulator - https://github.com/reicast/reicast-emulator
-19. Libretro splashscreen - https://github.com/libretro/retroarch-assets/blob/master/branding/retroarch_nologo_bg.png
-
-Documentation - how to get framebuffer working
-20. https://github.com/libretro/RetroArch/blob/master/README-mali_fbdev_r4p0.md
-
+9. AdvanceMAME - https://github.com/amadvance/advancemame/releases/download/v3.5/advancemame-3.5.tar.gz
+10. Dosbox 0.74-ES GLES version - https://github.com/aqualung99/dosbox-0.74-ES
+11. Goonies remake - https://github.com/mthuurne/goonies
+12. GPIO controller - based on mk_arcade_joystick https://github.com/ericktarzia/GPIO_controller-for-retrorangepi
+13. Kodi Krypton - master version https://github.com/xbmc/xbmc
+14. OpenMSX - https://github.com/openMSX/openMSX
+15. Mupen64Plus - https://forum.odroid.com/viewtopic.php?f=52&t=5908
+16. PPSSPP - https://forum.odroid.com/viewtopic.php?f=52&t=5908

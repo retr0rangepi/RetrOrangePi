@@ -1,0 +1,8 @@
+ Retroarch Settings, 
+Aspect Ratio Index - Custom 
+Custom Viewport X - 194
+Custom Viewport Y - 28
+Custom Viewport Width - 895
+Custom Viewport Height - 663
+Window Scale - 3.0X 
+Integer Scale - Off

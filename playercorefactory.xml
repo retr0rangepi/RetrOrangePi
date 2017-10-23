@@ -1,0 +1,14 @@
+<playercorefactory>
+<players>
+<player name="mpv" type="ExternalPlayer" video="true">
+<filename>/usr/bin/mpv</filename>
+<args>--vo=vdpau --hwdec=vdpau --hwdec-codecs=all --fs --sub-auto=all</args>
+<hidexbmc>false</hidexbmc>
+<hideconsole>false</hideconsole>
+<warpcursor>none</warpcursor>
+</player>
+</players>
+<rules action="prepend">
+<rule video="true" player="mpv"/>
+</rules>
+</playercorefactory>
