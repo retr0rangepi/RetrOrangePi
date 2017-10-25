@@ -82,10 +82,9 @@
 9. AdvanceMAME - https://github.com/amadvance/advancemame/releases/download/v3.5/advancemame-3.5.tar.gz
 10. Dosbox 0.74-ES GLES version - https://github.com/aqualung99/dosbox-0.74-ES
 11. Goonies remake - https://github.com/mthuurne/goonies
-12. GPIO controller - based on mk_arcade_joystick https://github.com/ericktarzia/GPIO_controller-for-retrorangepi
-13. Kodi Krypton - master version https://github.com/xbmc/xbmc
-14. OpenMSX - https://github.com/openMSX/openMSX
-15. Mupen64Plus - https://forum.odroid.com/viewtopic.php?f=52&t=5908
-16. PPSSPP - https://forum.odroid.com/viewtopic.php?f=52&t=5908
-17. Amiga UAE4ARM - https://github.com/Chips-fr/uae4arm-rpi
+12. Kodi Krypton - https://github.com/xbmc/xbmc/tree/Krypton
+13. OpenMSX - https://github.com/openMSX/openMSX
+14. Mupen64Plus - https://forum.odroid.com/viewtopic.php?f=52&t=5908
+15. PPSSPP - https://forum.odroid.com/viewtopic.php?f=52&t=5908
+16. Amiga UAE4ARM - https://github.com/Chips-fr/uae4arm-rpi
 
