@@ -13,8 +13,8 @@
 
 ## RetroPie-Setup components:
 
-6. [EmulationStation] (https://github.com/retr0rangepi/EmulationStation) - retropie fork with ROPi flavor
-7. [RetroPie-Setup] (https://github.com/retr0rangepi/RetroPie-Setup) - ROPi H3 Mali fork
+6. EmulationStation: https://github.com/retr0rangepi/EmulationStation - retropie fork with ROPi flavor
+7. RetroPie-Setup: https://github.com/retr0rangepi/RetroPie-Setup - ROPi unofficial fork for H3 Mali devices
 
 ### Libretro cores
 
@@ -36,7 +36,7 @@
 * Neo Geo (lr-fba), (lr-fbalpha) 
 * Neo Geo Pocket (lr-mednafen-ngp) 
 * Neo Geo Pocket Color (lr-mednafen-ngp) 
-* Nintendo 64 (lr-mupen64plus), (lr-GLupenN64) 
+* Nintendo 64 (lr-mupen64plus), (lr-parallel) 
 * Nintendo Entertainment System (lr-fceumm), (lr-nestopia) 
 * Cave Story (nxengine-libretro)
 * PC Engine/TurboGrafx-16 (lr-mednafen-pce-fast) (lr-beetle-supergrafx) 
@@ -54,7 +54,6 @@
 * ZX Spectrum (lr-fuse) 
 
 ### Standalone emulators / ports (with small tweaks to work in ARMv7/Mali400)
-* Amiga (UAE4ARM) 
 * Apple II (Linapple) 
 * Atari 5200 and 8-bit series
 * Atari ST/STE/TT/Falcon (Hatari) 
@@ -66,8 +65,7 @@
 * OpenBOR (OpenBOR) 
 * OutRun Engine (Cannonball) 
 * Prince of Persia (SDLPoP) 
-* Reicast (Dreamcast emulator)
-* Super Mario War (Super Mario War)
+* Super Mario War
 * TI99Sim
 * XRoar
 * Zelda Engine (Solarus) 
@@ -79,12 +77,14 @@
 
 8. Background music -  https://retropie.org.uk/forum/topic/347/background-music-continued-from-help-support/2
 
-Extra content: 
+## Extra content
+
 9. AdvanceMAME - https://github.com/amadvance/advancemame/releases/download/v3.5/advancemame-3.5.tar.gz
 10. Dosbox 0.74-ES GLES version - https://github.com/aqualung99/dosbox-0.74-ES
 11. Goonies remake - https://github.com/mthuurne/goonies
-12. GPIO controller - based on mk_arcade_joystick https://github.com/ericktarzia/GPIO_controller-for-retrorangepi
-13. Kodi Krypton - master version https://github.com/xbmc/xbmc
-14. OpenMSX - https://github.com/openMSX/openMSX
-15. Mupen64Plus - https://forum.odroid.com/viewtopic.php?f=52&t=5908
-16. PPSSPP - https://forum.odroid.com/viewtopic.php?f=52&t=5908
+12. Kodi Krypton - https://github.com/xbmc/xbmc/tree/Krypton
+13. OpenMSX - https://github.com/openMSX/openMSX
+14. Mupen64Plus - https://forum.odroid.com/viewtopic.php?f=52&t=5908
+15. PPSSPP - https://forum.odroid.com/viewtopic.php?f=52&t=5908
+16. Amiga UAE4ARM - https://github.com/Chips-fr/uae4arm-rpi
+

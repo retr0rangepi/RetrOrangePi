@@ -1,0 +1,6 @@
+[submodule "BashTool_ROPI_RCA"]
+	path = BashTool_ROPI_RCA
+	url = https://github.com/retr0rangepi/BashTool_ROPI_RCA
+[submodule "overscan_fix"]
+	path = overscan_fix
+	url = https://github.com/retr0rangepi/allwinner_tvout_manipulator
