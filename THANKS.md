@@ -4,11 +4,12 @@ Thanks to our mates from our FB group and OrangePi Club for the feedback and sup
 
 Support the core developers:
 
-[ARMBIAN] (http://www.armbian.com/donate/)
-[RETROPIE] (https://retropie.org.uk/donate/)
-[LIBRETRO] (http://www.libretro.com/index.php/contributions/)
-[OPENELEC FORK] (https://github.com/jernejsk/OpenELEC-OPi2)
-[ODROID OGST] (https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2LV8N2SWDM3FN)
+* [ARMBIAN] (http://www.armbian.com/donate/)
+* [RETROPIE] (https://retropie.org.uk/donate/)
+* [LIBRETRO] (http://www.libretro.com/index.php/contributions/)
+* [OPENELEC FORK] (https://github.com/jernejsk/OpenELEC-OPi2)
+* [ODROID OGST] (https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2LV8N2SWDM3FN)
+
 
 
 

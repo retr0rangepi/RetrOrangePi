@@ -39,10 +39,9 @@ Classic Armbian Desktop version, with several pre-installed applications.
 
 MAME versatile frontend, supports picture and video snapshots. Reads roms from mame-advmame folder. Full integration with RetroPie platforms is possible and will be added soon.
 
-
-- Download site: http://www.retrorangepi.org/
-- Forum: http://orangepi.club/forumdisplay.php?fid=5
-- Facebook page: https://www.facebook.com/retrorangepi/
-- Facebook group: https://www.facebook.com/groups/1131759626884432/
+* [Download site] (http://www.retrorangepi.org/)
+* [Forum] (http://orangepi.club/forumdisplay.php?fid=5)
+* [Facebook page] (https://www.facebook.com/retrorangepi/)
+* [Facebook group] (https://www.facebook.com/groups/1131759626884432/)
 
 
