@@ -27,8 +27,8 @@
 
 You can also check the output of the error, by running Runcommand Log from RetroPie section:
 
-Download site: http://www.retrorangepi.org/
-Forum: http://orangepi.club/forumdisplay.php?fid=5
-Facebook page: https://www.facebook.com/retrorangepi/
-Facebook group: https://www.facebook.com/groups/1131759626884432/
+[Download site] (http://www.retrorangepi.org/)
+[Forum] (http://orangepi.club/forumdisplay.php?fid=5)
+[Facebook page] (https://www.facebook.com/retrorangepi/)
+[Facebook group] (https://www.facebook.com/groups/1131759626884432/)
 
