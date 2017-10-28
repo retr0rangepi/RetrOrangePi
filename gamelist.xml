@@ -31,12 +31,6 @@
 		<image>./RetrOrangePi/kodi.png</image>
 	</folder>
 	<game>
-		<path>./RetrOrangePi/Background_Music/Disable_music.sh</path>
-		<name>Disable BG music</name>
-		<desc>Turn off background music permanently. </desc>
-		<image>./RetrOrangePi/images/musicoff.png</image>
-	</game>
-	<game>
 		<path>./RetrOrangePi/Power_Button/Shutdown.sh</path>
 		<name>Shutdown</name>
 		<desc>Set power button to turn off the system. </desc>
@@ -65,22 +59,16 @@
 		<name>Restart</name>
 		<desc>Set power button to restart the system, without rebooting. Useful to unfreeze the system.</desc>
 		<image>./RetrOrangePi/images/restart.png</image>
-		<playcount>1</playcount>
-		<lastplayed>20171022T140758</lastplayed>
 	</game>
 	<game>
 		<path>./RetrOrangePi/Power_Button/Restart_enabled.sh</path>
 		<name>Restart - enabled</name>
 		<desc>Power button set to restart the system, without rebooting. </desc>
 		<image>./RetrOrangePi/images/restart.png</image>
-		<playcount>1</playcount>
-		<lastplayed>20171022T140758</lastplayed>
 	</game>
 	<game>
 		<path>./filemanager.rp</path>
 		<name>File Manager</name>
-		<playcount>1</playcount>
-		<lastplayed>20171022T203512</lastplayed>
 		<image>./icons/filemanager.png</image>
 	</game>
 	<game>
@@ -88,165 +76,127 @@
 		<name>Enable BG music</name>
 		<desc>Turn on background music. Copy your tunes to ~/RetroPie/music folder. </desc>
 		<image>./RetrOrangePi/images/musicon.jpg</image>
-		<playcount>1</playcount>
-		<lastplayed>20171022T203118</lastplayed>
 	</game>
 	<game>
 		<path>./bluetooth.rp</path>
 		<name>Bluetooth</name>
-		<playcount>1</playcount>
-		<lastplayed>20171022T213640</lastplayed>
 		<image>./icons/bluetooth.png</image>
 	</game>
 	<game>
 		<path>./configedit.rp</path>
 		<name>Configuration Editor</name>
-		<playcount>1</playcount>
-		<lastplayed>20171022T213657</lastplayed>
 		<image>./icons/configedit.png</image>
 	</game>
 	<game>
 		<path>./esthemes.rp</path>
 		<name>ES Themes</name>
-		<playcount>1</playcount>
-		<lastplayed>20171022T213709</lastplayed>
 		<image>./icons/esthemes.png</image>
 	</game>
 	<game>
 		<path>./retroarch.rp</path>
 		<name>Retroarch</name>
-		<playcount>1</playcount>
-		<lastplayed>20171022T213726</lastplayed>
 		<image>./icons/retroarch.png</image>
 	</game>
 	<game>
 		<path>./retronetplay.rp</path>
 		<name>Retroarch NetPlay</name>
-		<playcount>1</playcount>
-		<lastplayed>20171022T213738</lastplayed>
 		<image>./icons/retronetplay.png</image>
 	</game>
 	<game>
 		<path>./rpsetup.rp</path>
 		<name>RetroPie-Setup</name>
-		<playcount>1</playcount>
-		<lastplayed>20171022T213750</lastplayed>
 		<image>./icons/rpsetup.png</image>
 	</game>
 	<game>
 		<path>./runcommand.rp</path>
 		<name>Run Command Configuration</name>
-		<playcount>1</playcount>
-		<lastplayed>20171022T213802</lastplayed>
 		<image>./icons/runcommand.png</image>
 	</game>
 	<game>
 		<path>./showip.rp</path>
 		<name>Show IP</name>
-		<playcount>1</playcount>
-		<lastplayed>20171022T213813</lastplayed>
 		<image>./icons/showip.png</image>
 	</game>
 	<game>
 		<path>./splashscreen.rp</path>
 		<name>Splash Screens</name>
-		<playcount>1</playcount>
-		<lastplayed>20171022T215233</lastplayed>
 		<image>./icons/splashscreen.png</image>
 	</game>
 	<game>
 		<path>./log.rp</path>
 		<name>Run Command Log</name>
-		<playcount>2</playcount>
-		<lastplayed>20171022T215932</lastplayed>
 		<image>./icons/log.png</image>
 	</game>
 	<game>
 		<path>./RetrOrangePi/ROPi_Radio/RPGamers.sh</path>
 		<name>RPGamers</name>
-		<playcount>1</playcount>
-		<lastplayed>20171022T224050</lastplayed>
 		<image>./RetrOrangePi/images/rpgamers.png</image>
 	</game>
 	<game>
 		<path>./RetrOrangePi/ROPi_Radio/VGMRadio.sh</path>
 		<name>VGMRadio</name>
-		<playcount>2</playcount>
-		<lastplayed>20171022T224205</lastplayed>
 		<image>./RetrOrangePi/images/vgmradio.png</image>
 	</game>
 	<game>
 		<path>./RetrOrangePi/ROPi_Radio/8bitX.sh</path>
 		<name>8bitX</name>
 		<image>./RetrOrangePi/images/8BitX.png</image>
-		<playcount>2</playcount>
-		<lastplayed>20171022T225531</lastplayed>
 	</game>
 	<game>
 		<path>./RetrOrangePi/ROPi_Radio/Radio Sega.sh</path>
 		<name>Radio Sega</name>
 		<image>./RetrOrangePi/images/radiosega.png</image>
-		<playcount>1</playcount>
-		<lastplayed>20171022T225550</lastplayed>
 	</game>
 	<game>
 		<path>./RetrOrangePi/RetrOrangePi Wifi.sh</path>
 		<name>RetrOrangePi Wifi</name>
 		<desc>NMTUI launcher - requires keyboard. </desc>
 		<image>./RetrOrangePi/images/wifi.png</image>
-		<playcount>1</playcount>
-		<lastplayed>20171022T225741</lastplayed>
 	</game>
 	<game>
 		<path>./RetrOrangePi/Update RetrOrangePi.sh</path>
 		<name>Update RetrOrangePi</name>
 		<desc>Update ROPi scripts and menu options. </desc>
 		<image>./RetrOrangePi/images/splash4.png</image>
-		<playcount>1</playcount>
-		<lastplayed>20171022T230058</lastplayed>
 	</game>
 	<game>
 		<path>./RetrOrangePi/BashTool_ROPI_RCA/Tool/run.sh</path>
 		<name>Audio/Video Selector</name>
 		<desc>Switch between HDMI, Analog 3.5mm RCA, video and audio. </desc>
 		<image>./RetrOrangePi/images/av_selector.jpg</image>
-		<playcount>1</playcount>
-		<lastplayed>20171022T233741</lastplayed>
 	</game>
 	<game>
 		<path>./RetrOrangePi/ROPi_Radio/Retro PC GAME Streaming Radio for Gyusyabu.sh</path>
 		<name>Retro PC GAME Streaming Radio for Gyusyabu</name>
 		<image>./RetrOrangePi/images/gyusyabu.gif</image>
-		<playcount>2</playcount>
-		<lastplayed>20171023T003100</lastplayed>
 	</game>
 	<game>
 		<path>./RetrOrangePi/ROPi_Radio/Turn_Off_Radio.sh</path>
 		<name>Turn_Off_Radio</name>
 		<image>./RetrOrangePi/images/turnoff.jpg</image>
-		<playcount>2</playcount>
-		<lastplayed>20171023T003243</lastplayed>
 	</game>
 	<game>
 		<path>./RetrOrangePi/ROPi_Radio/8BitFM.sh</path>
 		<name>8BitFM</name>
 		<image>./RetrOrangePi/images/8BitFM.png</image>
-		<playcount>3</playcount>
-		<lastplayed>20171023T012853</lastplayed>
-	</game>
-	<game>
-		<path>./RetrOrangePi/emmc.install.sh</path>
-		<name>eMMC Install</name>
-		<desc>Install RetrOrangePi to eMMC. </desc>
-		<image>./RetrOrangePi/images/emmc.jpg</image>
-		<playcount>5</playcount>
-		<lastplayed>20171023T015057</lastplayed>
 	</game>
 	<game>
 		<path>./RetrOrangePi/kodi/kodi.sh</path>
 		<name>kodi</name>
-                <image>./RetrOrangePi/images/kodi17.png</image>
+		<image>./RetrOrangePi/images/kodi17.png</image>
+	</game>
+	<game>
+		<path>./RetrOrangePi/Background_Music/Disable_music.sh</path>
+		<name>Disable BG music</name>
+		<desc>Turn off background music permanently. </desc>
+		<image>./RetrOrangePi/images/musicoff.png</image>
+	</game>
+	<game>
+		<path>./RetrOrangePi/install_emmc.sh</path>
+		<name>eMMC Install</name>
+		<desc>Install RetrOrangePi to eMMC. </desc>
+		<image>./RetrOrangePi/images/emmc.jpg</image>
 		<playcount>1</playcount>
-		<lastplayed>20171023T020752</lastplayed>
+		<lastplayed>20171028T113947</lastplayed>
 	</game>
 </gameList>
