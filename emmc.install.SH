@@ -1,23 +1,6 @@
 #!/bin/bash
 [ `whoami` = root ] || exec su -c $0 root
 EX_LIST="/home/pi/RetrOrangePi/exclude.txt"
-
-## Usage: FexChange <fexfile> <section> <key> <value> 
-## Description: Changes the value of a given key (or adds key=value) to a specific section of FEX file
-FexChange()
-{
-        # Search in file ($1) in section ($2) for key ($3)
-        found=$(sed -n -e "/^\[$2\]/,/^\[/{/^$3\s*=/p}" "$1")
-  
-        if [ -n "$found" ]; then
-                # Replace in file ($1) in section ($2) key ($3) with value ($4)
-                sed -i -e "/^\[$2\]/,/^\[/{s/^\($3\s*=\s*\).*/\1$4/}" "$1"
-        else
-                # Append in file ($1) in section ($2) key ($3) with value ($4)
-                sed -i -e "/^\[$2\]/,/^\[/{/^\[/i$3 = $4\n" -e "}" "$1"
-        fi
-}
-
 if (dialog --title "ROPi Install"  --backtitle "ROPi Install" --yes-button "yes" --no-button "no"  --yesno "Would you like to install RetrOrangePi to emmc?" 10 70) then
 	echo "Installing to emmc."
 	dialog --title "ROPi Install" --backtitle "ROPi Install"  --infobox "\n  Formating eMMC .." 10 70
@@ -68,8 +51,3 @@ EOF
     else
         exit
 fi
-
-        # Script.bin modification to enable sdcard detection when booting from emmc
-        bin2fex /boot/script.bin /boot/script.fex
-        FexChange "/boot/script.fex" "mmc0_para" "sdc_detmode" "1" # change sdcard detection mode
-        fex2bin /boot/script.fex /boot/script.bin
