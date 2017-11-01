@@ -10,7 +10,7 @@ musicdir = '/home/pi/RetroPie/music'
 maxvolume = 0.50
 volumefadespeed = 0.02
 restart = True # If true, this will cause the script to fade the music out and -stop- the song rather than pause it.
-startsong = "03-mission-1-into-the-turf.mp3" # if this is not blank, this is the EXACT, CaSeSeNsAtIvE filename of the song you always want to play first on boot.
+startsong = "" # if this is not blank, this is the EXACT, CaSeSeNsAtIvE filename of the song you always want to play first on boot.
 
 #local variables
 bgm = [mp3 for mp3 in os.listdir(musicdir) if mp3[-4:] == ".mp3" or mp3[-4:] == ".ogg"] # Find everything that's .mp3 or .ogg
