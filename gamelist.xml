@@ -161,7 +161,7 @@
 	</game>
 	<game>
 		<path>./RetrOrangePi/BashTool_ROPI_RCA/Tool/run.sh</path>
-		<name>Audio/Video Selector</name>
+		<name>Run AV selector</name>
 		<desc>Switch between HDMI, Analog 3.5mm RCA, video and audio. </desc>
 		<image>./RetrOrangePi/images/av_selector.jpg</image>
 	</game>
@@ -196,7 +196,5 @@
 		<name>eMMC Install</name>
 		<desc>Install RetrOrangePi to eMMC. </desc>
 		<image>./RetrOrangePi/images/emmc.jpg</image>
-		<playcount>1</playcount>
-		<lastplayed>20171028T113947</lastplayed>
 	</game>
 </gameList>
