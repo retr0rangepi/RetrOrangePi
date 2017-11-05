@@ -29,4 +29,6 @@ sudo cp /opt/retropie/supplementary/emulationstation/emulationstation /opt/retro
 sudo wget -q -O /opt/retropie/supplementary/emulationstation/emulationstation http://www.retrorangepi.org/emulationstation.kiosk
 echo "Restarting EmulationStation..."
 sleep 5
+sed -i -e 's/kiosk/Full/g' /opt/retropie/configs/all/emulationstation/es_settings.cfg
+
 sudo killall login
