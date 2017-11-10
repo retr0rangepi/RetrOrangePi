@@ -4,3 +4,6 @@
 [submodule "overscan_fix"]
 	path = overscan_fix
 	url = https://github.com/retr0rangepi/allwinner_tvout_manipulator
+[submodule "GPIO"]
+	path = GPIO
+	url = https://github.com/pjmcardle/GPIO_controller-for-retrorangepi
