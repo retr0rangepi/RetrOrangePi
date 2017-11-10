@@ -1,0 +1,10 @@
+[Unit]
+Description=TZ GPIO CONTROLLER
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /home/pi/RetrOrangePi/GPIO/tz_gpio_controller.py  > /home/pi/RetrOrangePi/GPIO/tz_gpio_controller.log 
+
+[Install]
+WantedBy=multi-user.target
