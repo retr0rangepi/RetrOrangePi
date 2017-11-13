@@ -36,13 +36,15 @@ else
 	echo "${green} copying files... ${reset}"
 	echo "${yellow} SERVICE FOUND ${reset}"
 
-	sudo cp -avr ~/RetrOrangePi/GPIO/tz_gpio.service /lib/systemd/system
+	sudo cp -avr /home/pi/RetrOrangePi/GPIO/tz_gpio.service /lib/systemd/system
 	sudo chmod 644 /lib/systemd/system/tz_gpio.service
 	sudo systemctl enable tz_gpio.service
 fi
 
 echo "${yellow}Installing GPIO for RetrOrangePi...${reset}"
-sudo python /home/pi/RetrOrangePi/GPIO/orangepi_PC_gpio_pyH3-master/setup.py install
+cd /home/pi/RetrOrangePi/GPIO/orangepi_PC_gpio_pyH3-master/
+sudo python setup.py install
+cd ~/
 
 #check uinput
 File=/etc/modules
