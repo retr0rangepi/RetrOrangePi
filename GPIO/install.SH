@@ -2,7 +2,7 @@
 
 cmd=(dialog --keep-tite --menu "Select the driver:" 22 76 16)
 
-options=(1 "TZ GPIO"
+options=(1 "TZ GAMES SP"
          2 "NES"
 )
 
