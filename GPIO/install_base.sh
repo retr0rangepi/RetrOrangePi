@@ -36,7 +36,7 @@ fi
 
 echo "${green} copying files... ${reset}"
 
-sudo cp -avr tz_gpio.service /lib/systemd/system
+sudo cp -avr /home/pi/RetrOrangePi/GPIO/tz_gpio.service /lib/systemd/system
 sudo sed -i "s/DRIVER_NAME/${driver_name}/g" /lib/systemd/system/tz_gpio.service
 sudo chmod 644 /lib/systemd/system/tz_gpio.service
 sudo systemctl enable tz_gpio.service

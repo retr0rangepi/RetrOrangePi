@@ -1,4 +1,4 @@
 #!/bin/bash
 
-source ./config/config_tz_gpio.sh
-source install_base.sh
+source /home/pi/RetrOrangePi/GPIO/config/config_tz_gpio.sh
+source /home/pi/RetrOrangePi/GPIO/install_base.sh

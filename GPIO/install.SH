@@ -12,10 +12,10 @@ for choice in $choices
 do
     case $choice in
         1)
-            source ./install_tz_gpio.sh
+            source /home/pi/RetrOrangePi/GPIO/install_tz_gpio.sh
             ;;
         2)
-            source ./install_nes.sh
+            source /home/pi/RetrOrangePi/GPIO/install_nes.sh
             ;;
     esac
 done
