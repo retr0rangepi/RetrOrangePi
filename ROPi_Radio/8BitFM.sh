@@ -1,6 +1,6 @@
 clear
 killall -q mplayer
-mplayer -really-quiet http://8bit.fm:8000/live &
+LD_LIBRARY_PATH=/usr/lib/GLSHIM mplayer -really-quiet http://8bit.fm:8000/live &
 
 
 

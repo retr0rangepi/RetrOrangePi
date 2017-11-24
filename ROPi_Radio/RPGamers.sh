@@ -1,5 +1,5 @@
 clear
 killall -q mplayer
-mplayer -really-quiet http://stream.rpgamers.net:8000/rpgn &
+LD_LIBRARY_PATH=/usr/lib/GLSHIM mplayer -really-quiet http://stream.rpgamers.net:8000/rpgn &
 
 

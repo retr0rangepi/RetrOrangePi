@@ -1,5 +1,5 @@
 clear
 killall -q mplayer
-mplayer -really-quiet http://content.radiosega.net:8006/live &
+LD_LIBRARY_PATH=/usr/lib/GLSHIM mplayer -really-quiet http://content.radiosega.net:8006/live &
 
 

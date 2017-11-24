@@ -1,5 +1,5 @@
 clear
 killall -q mplayer
-mplayer -really-quiet -cache 1024 "http://gyusyabu.ddo.jp:8000/;stream.mp3" &
+LD_LIBRARY_PATH=/usr/lib/GLSHIM mplayer -really-quiet -cache 1024 "http://gyusyabu.ddo.jp:8000/;stream.mp3" &
 
 

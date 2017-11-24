@@ -1,5 +1,5 @@
 clear
 killall -q mplayer
-mplayer -really-quiet http://radio.vgmradio.com:8040/stream &
+LD_LIBRARY_PATH=/usr/lib/GLSHIM mplayer -really-quiet http://radio.vgmradio.com:8040/stream &
 
 
