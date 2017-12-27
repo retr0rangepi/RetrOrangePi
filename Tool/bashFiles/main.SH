@@ -40,6 +40,11 @@ RetrocfgChange()
 	fi
 }
 
+UpdateSoundFiles()
+{
+
+}
+
 #############################
 
 # Menu Screen. Select option
@@ -62,10 +67,10 @@ if [ $OPTION = "1" ]; then # Set: HDMI Video & Audio
 	FexChange "/boot/script.fex" "disp_init" "disp_mode" "0" # Use Screen0 configs
 	FexChange "/boot/script.fex" "disp_init" "screen0_output_type" "3" # HDMI
 	FexChange "/boot/script.fex" "disp_init" "screen0_output_mode" "5" # 720p
-        FexChange "/boot/script.fex" "disp_init" "fb0_width" "0" # underscan setting
-        FexChange "/boot/script.fex" "disp_init" "fb0_height" "0" # underscan setting
-        FexChange "/boot/script.fex" "disp_init" "fb1_width" "0" # underscan setting
-        FexChange "/boot/script.fex" "disp_init" "fb1_height" "0" # underscan setting
+	FexChange "/boot/script.fex" "disp_init" "fb0_width" "0" # underscan setting
+	FexChange "/boot/script.fex" "disp_init" "fb0_height" "0" # underscan setting
+	FexChange "/boot/script.fex" "disp_init" "fb1_width" "0" # underscan setting
+	FexChange "/boot/script.fex" "disp_init" "fb1_height" "0" # underscan setting
 	FexChange "/boot/script.fex" "hdmi_para" "hdmi_used" "1" # Turn on HDMI
 	FexChange "/boot/script.fex" "tv_para" "tv_used" "0" # Turn off RCA
 	FexChange "/boot/script.fex" "audiohub" "hub_used" "0" # Disable Audio HUB
@@ -93,11 +98,11 @@ elif [ $OPTION = "2" ]; then # Set: RCA Video (PAL) & Audio
 	FexChange "/boot/script.fex" "disp_init" "disp_mode" "1" # Use Screen1 configs
 	FexChange "/boot/script.fex" "disp_init" "screen1_output_type" "2" # TV
 	FexChange "/boot/script.fex" "disp_init" "screen1_output_mode" "11" # PAL
-        FexChange "/boot/script.fex" "disp_init" "fb0_width" "672" # underscan setting
-        FexChange "/boot/script.fex" "disp_init" "fb0_height" "448" # underscan setting
-        FexChange "/boot/script.fex" "disp_init" "fb0_width" "672" # underscan setting
-        FexChange "/boot/script.fex" "disp_init" "fb0_height" "448" # underscan setting
-     	FexChange "/boot/script.fex" "hdmi_para" "hdmi_used" "0" # Turn off HDMI
+	FexChange "/boot/script.fex" "disp_init" "fb0_width" "672" # underscan setting
+	FexChange "/boot/script.fex" "disp_init" "fb0_height" "448" # underscan setting
+	FexChange "/boot/script.fex" "disp_init" "fb0_width" "672" # underscan setting
+	FexChange "/boot/script.fex" "disp_init" "fb0_height" "448" # underscan setting
+FexChange "/boot/script.fex" "hdmi_para" "hdmi_used" "0" # Turn off HDMI
 	FexChange "/boot/script.fex" "tv_para" "tv_used" "1" # Turn on RCA
 	FexChange "/boot/script.fex" "audiohub" "hub_used" "1" # Enable Audio HUB
 	FexChange "/boot/script.fex" "audiohub" "spdif_used" "0" # Disable SPDIF
@@ -108,14 +113,14 @@ elif [ $OPTION = "2" ]; then # Set: RCA Video (PAL) & Audio
 	sed -i '/^ *$/d' /etc/modules # Delete empty lines
 	echo "tv" >> /etc/modules
 
-        # Adding tvout_manipulator to /etc/rc.local
-        sed -i '/^ *$/d' /etc/rc.local # Delete empty lines
-        sed -i '/tvout/d' /etc/rc.local # Delete previous tvout entries
-        sed -i -e '$i \sudo /home/pi/RetrOrangePi/overscan_fix/src/bin/Release/tvout -m -x 40 -y 10\n' /etc/rc.local
+	# Adding tvout_manipulator to /etc/rc.local
+	sed -i '/^ *$/d' /etc/rc.local # Delete empty lines
+	sed -i '/tvout/d' /etc/rc.local # Delete previous tvout entries
+	sed -i -e '$i \sudo /home/pi/RetrOrangePi/overscan_fix/src/bin/Release/tvout -m -x 40 -y 10\n' /etc/rc.local
 	
 	# Audio setup
 	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_device' '"hw:0,0"'
-        RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_driver' '"sdl2"'
+	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_driver' '"sdl2"'
 	#cp -a /home/pi/RetroPie/music/bgmusic.py /home/pi/RetroPie/music/bgmusic_disable.py
 	#rm -rf /home/pi/RetroPie/music/bgmusic.py
 	cp -a files/rca/asound.conf /etc/asound.conf
@@ -133,10 +138,10 @@ elif [ $OPTION = "3" ]; then # Set: RCA Video (NTSC) & Audio
 	FexChange "/boot/script.fex" "disp_init" "disp_mode" "1" # Use Screen1 configs
 	FexChange "/boot/script.fex" "disp_init" "screen1_output_type" "2" # TV
 	FexChange "/boot/script.fex" "disp_init" "screen1_output_mode" "14" # NTSC
-        FexChange "/boot/script.fex" "disp_init" "fb0_width" "672" # underscan setting
-        FexChange "/boot/script.fex" "disp_init" "fb0_height" "448" # underscan setting
-        FexChange "/boot/script.fex" "disp_init" "fb0_width" "672" # underscan setting
-        FexChange "/boot/script.fex" "disp_init" "fb0_height" "448" # underscan setting
+	FexChange "/boot/script.fex" "disp_init" "fb0_width" "672" # underscan setting
+	FexChange "/boot/script.fex" "disp_init" "fb0_height" "448" # underscan setting
+	FexChange "/boot/script.fex" "disp_init" "fb0_width" "672" # underscan setting
+	FexChange "/boot/script.fex" "disp_init" "fb0_height" "448" # underscan setting
 	FexChange "/boot/script.fex" "hdmi_para" "hdmi_used" "0" # Turn off HDMI
 	FexChange "/boot/script.fex" "tv_para" "tv_used" "1" # Turn on RCA
 	FexChange "/boot/script.fex" "audiohub" "hub_used" "1" # Enable Audio HUB
@@ -156,7 +161,7 @@ elif [ $OPTION = "3" ]; then # Set: RCA Video (NTSC) & Audio
 	
 	# Audio setup
 	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_device' '"hw:0,0"'
-        RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_driver' '"sdl2"'
+	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_driver' '"sdl2"'
 	#cp -a /home/pi/RetroPie/music/bgmusic.py /home/pi/RetroPie/music/bgmusic_disable.py
 	#rm -rf /home/pi/RetroPie/music/bgmusic.py
 	cp -a files/rca/asound.conf /etc/asound.conf
@@ -186,7 +191,7 @@ elif [ $OPTION = "4" ]; then # Set: HDMI Video. RCA Audio
 	
 	######## Audio setup
 	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_device' '"hw:0,0"'
-        RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_driver' '"sdl2"'
+	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_driver' '"sdl2"'
 	#cp -a /home/pi/RetroPie/music/bgmusic.py /home/pi/RetroPie/music/bgmusic_disable.py
 	#rm -rf /home/pi/RetroPie/music/bgmusic.py
 	cp -a files/rca/asound.conf /etc/asound.conf
