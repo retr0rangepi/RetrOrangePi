@@ -123,8 +123,8 @@ elif [ $OPTION = "2" ]; then # Set: RCA Video (PAL) & Audio
 	sed -i -e '$i \sudo /home/pi/RetrOrangePi/overscan_fix/src/bin/Release/tvout -m -x 40 -y 10\n' /etc/rc.local
 	
 	# Audio setup
-	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_device' '"hw:0,0"'
-	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_driver' '""'
+#	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_device' '""'
+#	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_driver' '""'
 	UpdateSoundOutputFiles 0 1
 	amixer -c 0 set "Audio lineout" unmute
 
@@ -160,8 +160,8 @@ elif [ $OPTION = "3" ]; then # Set: RCA Video (NTSC) & Audio
 	sed -i -e '$i \sudo /home/pi/RetrOrangePi/overscan_fix/src/bin/Release/tvout -m -x 50 -y 20\n' /etc/rc.local
 
 	# Audio setup
-	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_device' '"hw:0,0"'
-	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_driver' '""'
+#	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_device' '""'
+#	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_driver' '""'
 	UpdateSoundOutputFiles 0 1
 	amixer -c 0 set "Audio lineout" unmute
 
@@ -187,7 +187,7 @@ elif [ $OPTION = "4" ]; then # Set: HDMI Video. RCA Audio
 	sed -i '/^ *$/d' /etc/modules # Delete empty lines
 	
 	######## Audio setup
-	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_device' '"hw:0,0"'
+	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_device' '""'
 	RetrocfgChange '/opt/retropie/configs/all/retroarch.cfg' 'audio_driver' '""'
 	UpdateSoundOutputFiles 0 1
 	amixer -c 0 set "Audio lineout" unmute
