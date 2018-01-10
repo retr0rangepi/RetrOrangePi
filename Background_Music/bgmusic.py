@@ -76,11 +76,11 @@ while True:
 				continue
 				
 	#Check to see if the DisableMusic file exists; if it does, stop doing everything!
-	if os.path.exists('/home/pi/RetroPie/music/DisableMusic'):
+	if os.path.exists('/home/pi/RetrOrangePi/Background_Music/DisableMusic'):
 		#print "DisableMusic found!"
 		if mixer.music.get_busy():
 			mixer.music.stop();
-		while (os.path.exists('/home/pi/RetroPie/music/DisableMusic')):
+		while (os.path.exists('/home/pi/RetrOrangePi/Background_Music/DisableMusic')):
 			time.sleep(15)
 		#print "DisableMusic gone!"
 
