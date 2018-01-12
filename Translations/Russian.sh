@@ -28,7 +28,7 @@ sudo apt-get install fonts-droid
 cp -v /opt/retropie/supplementary/emulationstation/emulationstation /home/pi/temp/es_original
 sudo wget -O /opt/retropie/supplementary/emulationstation/emulationstation http://www.retrorangepi.org/es_russian
 sed -i '/GamelistViewStyle/d' /opt/retropie/configs/all/emulationstation/es_settings.cfg
-sed -i -e '$i <string name="GamelistViewStyle" value="подробный" />\n' /opt/retropie/configs/all/emulationstation/es_settings.cfg
+sed -i -e '$i <string name="GamelistViewStyle" value="подробные" />\n' /opt/retropie/configs/all/emulationstation/es_settings.cfg
 sed -i '/language/d' /opt/retropie/configs/all/retroarch.cfg
 sed -i -e '$i user_language = "9"\n' /opt/retropie/configs/all/retroarch.cfg
 sudo killall login
