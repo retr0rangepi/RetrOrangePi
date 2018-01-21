@@ -45,7 +45,7 @@ EOF
 	rsync -avrltD  --delete --exclude-from=$EX_LIST / /mnt/rootfs >/dev/null 2>&1
 	rsync -avrltD  --delete /mnt/oe/ /mnt/openelec >/dev/null 2>&1
 	umount /mnt/boot /mnt/rootfs /mnt/openelec
-	rm -r /mnt/boot /mnt/boot /mnt/openelec
+	rm -r /mnt/boot /mnt/rootfs /mnt/openelec
 	dialog --title "ROPi Install" --yes-button "ok" --no-button "exit"  --yesno "eMMC install complete, please power off and remove sd card to boot from eMMC" 10 70
         exit
     else
