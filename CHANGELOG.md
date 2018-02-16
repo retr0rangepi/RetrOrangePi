@@ -25,7 +25,7 @@
 - Vice 3.1 (SDL2) – Commodore emulator
 - Boot selection – from Desktop (EmulationStation, Kodi, AdvanceMENU, RetroArch, Desktop) 
 - Onscreen keyboard (Florence)
-- Overscan fix in AV outputs (Allwinner_TVOUT_manipulator)
+- Overscan fix in AV outputs (Allwinner_TVOUT_manipulator fork) - https://github.com/retr0rangepi/allwinner_tvout_manipulator
 - New Desktop wallpaper, wifi config, ES, Kodi, Donate and Support icons
 - Customized Retroarch configuration (optimal settings, appearance tweaks, original aspect ratio)
 - new HDMI/Analog AV configuration tool - user contribution
