@@ -1,6 +1,8 @@
-# RetrOrangePi 4.0 
+# RetrOrangePi v4.1 (latest build)
+* Download site: http://www.retrorangepi.org/
 
-As expected by the vast majority of users, ROPi 3.0.1 to 4.0 update will work by script, without the need of reflashing your sdcard all over again. We hope this version to be more user-friendly and easily upgradable. 
+## Update from v3
+ROPi 3.0.1 to 4.0 update will work by script, without the need of reflashing your sdcard all over again. Instructions: http://orangepi.club/showthread.php?tid=2216
 
 ## this RetrOrangePi repository features
 - An EmulationStation RetroPie platform submenu
@@ -40,10 +42,6 @@ Classic Armbian Desktop version, with several pre-installed applications. Includ
 MAME versatile frontend, supports picture and video snapshots. Reads roms from mame-advmame folder. Full integration with RetroPie platforms is possible and will be added soon (keyboard recommended).
 
 
-* Download site: http://www.retrorangepi.org/
 * Forum: http://orangepi.club/forumdisplay.php?fid=31
 * Facebook page: https://www.facebook.com/retrorangepi/
 * Facebook group: (https://www.facebook.com/groups/1131759626884432/
-
-
-
