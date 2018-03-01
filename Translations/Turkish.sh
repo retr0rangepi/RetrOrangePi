@@ -26,7 +26,7 @@ sleep 3
 mkdir /home/pi/temp
 sudo apt-get install fonts-droid
 cp -v /opt/retropie/supplementary/emulationstation/emulationstation /home/pi/temp/es_original
-sudo wget -O /opt/retropie/supplementary/emulationstation/emulationstation http://retrorangepi.xenlayer.com/es_turkish
+sudo wget -O /opt/retropie/supplementary/emulationstation/emulationstation http://www.retrorangepi.org/es_turkish
 sed -i '/GamelistViewStyle/d' /opt/retropie/configs/all/emulationstation/es_settings.cfg
 sed -i -e '$i <string name="GamelistViewStyle" value="DETAYLI" />\n' /opt/retropie/configs/all/emulationstation/es_settings.cfg
 sudo killall login

@@ -1,6 +1,5 @@
 # RetrOrangePi v4.1 (latest build)
-* Download site: http://retrorangepi.xenlayer.com/ (Europe server)
-NOTE: our US server is temporarily down
+* Download site: http://www.retrorangepi.org/ (USA) or http://retrorangepi.xenlayer.com (FRANCE)
 
 ## Update from v3
 ROPi 3.0.1 to 4.0 update will work by script, without the need of reflashing your sdcard all over again. Instructions: http://orangepi.club/showthread.php?tid=2216

@@ -25,7 +25,7 @@ echo "*****************************************************************"
 sleep 3
 mkdir /home/pi/temp
 cp -v /opt/retropie/supplementary/emulationstation/emulationstation /home/pi/temp/es_original
-sudo wget -O /opt/retropie/supplementary/emulationstation/emulationstation http://retrorangepi.xenlayer.com/es_english
+sudo wget -O /opt/retropie/supplementary/emulationstation/emulationstation http://www.retrorangepi.org/es_english
 sed -i '/GamelistViewStyle/d' /opt/retropie/configs/all/emulationstation/es_settings.cfg
 sed -i -e '$i <string name="GamelistViewStyle" value="detailed" />\n' /opt/retropie/configs/all/emulationstation/es_settings.cfg
 sed -i '/language/d' /opt/retropie/configs/all/retroarch.cfg
