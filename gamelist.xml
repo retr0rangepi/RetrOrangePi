@@ -191,10 +191,10 @@
 		<desc>Turn off background music permanently. </desc>
 		<image>./RetrOrangePi/images/musicoff.png</image>
 	</game>
-	<game>
-		<path>./RetrOrangePi/install_emmc.sh</path>
+	<folder>
+		<path>./RetrOrangePi/eMMC</path>
 		<name>eMMC Install</name>
 		<desc>Install RetrOrangePi to eMMC. </desc>
 		<image>./RetrOrangePi/images/emmc.jpg</image>
-	</game>
+	</folder>
 </gameList>

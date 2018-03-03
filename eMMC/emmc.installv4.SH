@@ -1,7 +1,7 @@
 #!/bin/bash
 [ `whoami` = root ] || exec su -c $0 root
-EX_LIST="/home/pi/RetrOrangePi/exclude.txt"
-if (dialog --title "ROPi Install"  --backtitle "ROPi Install" --yes-button "yes" --no-button "no"  --yesno "Would you like to install RetrOrangePi to eMMC?" 10 70) then
+EX_LIST="/home/pi/RetrOrangePi/eMMC/exclude.txt"
+if (dialog --title "ROPi Install"  --backtitle "ROPi Install" --yes-button "yes" --no-button "no"  --yesno "Would you like to install RetrOrangePi v4.1 to eMMC?" 10 70) then
 	echo "Installing to eMMC."
 	dialog --title "ROPi Install" --backtitle "ROPi Install"  --infobox "\n  Formatting eMMC..." 10 70
 	sleep 3
@@ -23,7 +23,7 @@ p
 w
 EOF
         cd  /usr/lib/linux* && dd if=u-boot-sunxi-with-spl.bin of=/dev/mmcblk1 bs=1024 seek=8 >/dev/null 2>&1
-        cd /home/pi/RetrOrangePi
+        cd /home/pi/RetrOrangePi/eMMC
        	dialog --title "ROPi Install" --backtitle "ROPi Install"  --infobox "\n  Formatting rootfs. Please wait..." 10 70
 	dd if=/dev/mmcblk0p1 of=/dev/mmcblk1p1
 	mkfs -t ext4 -F /dev/mmcblk1p2 >/dev/null 2>&1

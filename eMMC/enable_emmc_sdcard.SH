@@ -26,6 +26,6 @@ FexChange()
 
 	# Script.bin modification
 	bin2fex /boot/script.bin /boot/script.fex
-	FexChange "/boot/script.fex" "mmc0_para" "sdc_detmode" "1" # Use Screen0 configs
+	FexChange "/boot/script.fex" "mmc0_para" "sdc_detmode" "1"
 	fex2bin /boot/script.fex /boot/script.bin
 
