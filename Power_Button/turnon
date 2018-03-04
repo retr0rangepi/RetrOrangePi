@@ -1,0 +1,2 @@
+event=button/power
+action=/bin/sh /home/pi/RetrOrangePi/Power_Button/turnon.SH
