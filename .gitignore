@@ -1,4 +1,4 @@
 ./gamelist.xml
 ./kodi/gamelist.xml
 ./Background_Music/DisableMusic
-./Power_Button
+./Power_Button/*
