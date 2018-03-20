@@ -25,7 +25,7 @@ FexChange()
 }
 
 	# Script.bin modification
-	bin2fex /boot/script.bin /boot/script.fex
-	FexChange "/boot/script.fex" "mmc0_para" "sdc_detmode" "1"
-	fex2bin /boot/script.fex /boot/script.bin
+	bin2fex /mnt/boot/script.bin /mnt/boot/script.fex
+	FexChange "/mnt/boot/script.fex" "mmc0_para" "sdc_detmode" "1"
+	fex2bin /mnt/boot/script.fex /mnt/boot/script.bin
 
