@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<gameList>
+	<game>
+		<path>./openelec.sh</path>
+		<name>openelec</name>
+		<desc>OpenELEC is an embedded operating system built around Kodi, the open source entertainment media hub. Home Theatre PCs are known to be hard to install and configure, and  it can take a massive amount of time to keep them running. OpenELEC, on the other hand, is designed to be as lightweight as possible in terms of size and complexity, meaning your HTPC becomes no harder to configure than your satellite box or DVD player. With its small footprint, OpenELEC is also ideal for today's small form factor systems, so you won't need a big desktop computer in your living room!</desc>
+		<image>./icons/openelec.jpg</image>
+		<thumbnail />
+		<rating>1</rating>
+		<releasedate>not-a-date-time</releasedate>
+		<developer>unknown</developer>
+		<publisher>unknown</publisher>
+		<genre>unknown</genre>
+		<players>1</players>
+		<favorite>false</favorite>
+		<kidgame>false</kidgame>
+		<hidden>false</hidden>
+		<playcount>0</playcount>
+		<lastplayed>0</lastplayed>
+	</game>
+	<game>
+		<path>./kodi.sh</path>
+		<name>kodi</name>
+		<desc>Kodi is an award-winning free and open source (GPL) software media center for playing videos, music, pictures, games, and more. Kodi runs on Linux, OS X, Windows, iOS, and Android, featuring a 10-foot user interface for use with televisions and remote controls. It allows users to play and view most videos, music, podcasts, and other digital media files from local and network storage media and the internet. </desc>
+		<image>./icons/kodi.png</image>
+		<rating>0.8</rating>
+		<playcount>13</playcount>
+		<lastplayed>20180826T205529</lastplayed>
+	</game>
+</gameList>
