@@ -9,7 +9,6 @@ while pgrep mpv &>/dev/null;
 do sleep 1;
 done
 /opt/retropie/emulators/retroarch/bin/retroarch --menu --config /opt/retropie/configs/all/retroarch.cfg;\
-startx 2>&1 >/dev/tty;/opt/retropie/supplementary/emulationstation/emulationstation.sh;stty echo
-
-
+startx 2>&1 >/dev/tty;python /home/pi/RetrOrangePi/Background_Music/bgmusic.py &
+/opt/retropie/supplementary/emulationstation/emulationstation.sh;stty echo;sudo pkill -f bgmusic.py
 

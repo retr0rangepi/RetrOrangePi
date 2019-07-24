@@ -8,5 +8,6 @@ SERVICE='fbi'
 while pgrep mpv &>/dev/null;
 do sleep 1;
 done
-/usr/local/bin/advmenu;startx 2>&1 >/dev/tty;/opt/retropie/supplementary/emulationstation/emulationstation.sh;stty echo
-
+/usr/local/bin/advmenu;startx 2>&1 >/dev/tty;
+python /home/pi/RetrOrangePi/Background_Music/bgmusic.py & /opt/retropie/supplementary/emulationstation/emulationstation.sh;
+stty echo;sudo pkill -f bgmusic.py

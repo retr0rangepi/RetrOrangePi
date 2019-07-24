@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 stty -echo
 SERVICE='fbi'
       if ps ax | grep $SERVICE > /dev/null
@@ -8,4 +8,6 @@ SERVICE='fbi'
 while pgrep mpv &>/dev/null;
 do sleep 1;
 done
-LD_LIBRARY_PATH=/usr/local/lib /opt/retropie/supplementary/emulationstation/emulationstation.sh;stty echo
+python /home/pi/RetrOrangePi/Background_Music/bgmusic.py & /opt/retropie/supplementary/emulationstation/emulationstation.sh;
+stty echo;sudo pkill -f bgmusic.py
+
