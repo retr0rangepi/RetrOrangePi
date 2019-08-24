@@ -8,7 +8,7 @@ SERVICE='fbi'
 while pgrep mpv &>/dev/null;
 do sleep 1;
 done
-startx 2>&1 >/dev/tty;
+"/home/pi/RetrOrangePi/Armbian Desktop.sh";
 python /home/pi/RetrOrangePi/Background_Music/bgmusic.py &;
 /opt/retropie/supplementary/emulationstation/emulationstation.sh;stty echo;sudo pkill -f bgmusic.py
 

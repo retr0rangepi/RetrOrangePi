@@ -1,5 +1,6 @@
 clear
-killall -q mplayer
-LD_LIBRARY_PATH=/usr/lib/GLSHIM mplayer -really-quiet http://radio.vgmradio.com:8040/stream &
+sudo pkill -f bgmusic.py
+killall -q vlc
+cvlc -q http://radio.vgmradio.com:8040/stream &
 
 

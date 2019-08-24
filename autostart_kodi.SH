@@ -9,9 +9,8 @@ while pgrep mpv &>/dev/null;
 do sleep 1;
 done
 pushd "/home/pi/RetrOrangePi/kodi" 
-startx ./start-kodi.SH 
+./kodi.sh
 popd
-startx 2>&1 >/dev/tty;
 python /home/pi/RetrOrangePi/Background_Music/bgmusic.py & /opt/retropie/supplementary/emulationstation/emulationstation.sh;
 stty echo;sudo pkill -f bgmusic.py
 

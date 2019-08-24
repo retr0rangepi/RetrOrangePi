@@ -8,7 +8,7 @@ SERVICE='fbi'
 while pgrep mpv &>/dev/null;
 do sleep 1;
 done
-/opt/retropie/emulators/retroarch/bin/retroarch --menu --config /opt/retropie/configs/all/retroarch.cfg;\
-startx 2>&1 >/dev/tty;python /home/pi/RetrOrangePi/Background_Music/bgmusic.py &
+/opt/retropie/emulators/retroarch/bin/retroarch --menu --config /opt/retropie/configs/all/retroarch.cfg;
+python /home/pi/RetrOrangePi/Background_Music/bgmusic.py &
 /opt/retropie/supplementary/emulationstation/emulationstation.sh;stty echo;sudo pkill -f bgmusic.py
 

@@ -1,5 +1,6 @@
 clear
-killall -q mplayer
-LD_LIBRARY_PATH=/usr/lib/GLSHIM mplayer -really-quiet http://content.radiosega.net:8006/live &
+sudo pkill -f bgmusic.py
+killall -q vlc
+cvlc -q http://content.radiosega.net:8006/live &
 
 

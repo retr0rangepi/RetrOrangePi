@@ -1,2 +1,2 @@
 #!/bin/bash
-"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "kodi" ""
+LD_LIBRARY_PATH=/usr/lib/ffmpeg /usr/lib/arm-linux-gnueabihf/kodi/kodi.bin

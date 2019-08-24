@@ -1,1 +1,1 @@
-killall -q mplayer
+killall -q vlc
