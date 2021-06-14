@@ -4,7 +4,7 @@ After=multi-user.target
 
 [Service]
 Type=idle
-ExecStart=/usr/bin/python /home/pi/RetrOrangePi/GPIO/drivers/DRIVER_NAME.py  > /home/pi/RetrOrangePi/GPIO/drivers/DRIVER_NAME.log
+ExecStart=/usr/bin/python2 /home/pi/RetrOrangePi/GPIO/drivers/DRIVER_NAME.py  > /home/pi/RetrOrangePi/GPIO/drivers/DRIVER_NAME.log
 
 [Install]
 WantedBy=multi-user.target

@@ -1,1 +1,1 @@
-killall -q vlc
+killall -q mpv

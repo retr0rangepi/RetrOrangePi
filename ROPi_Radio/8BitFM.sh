@@ -1,6 +1,6 @@
 clear
-killall -q vlc
-cvlc -q http://8bit.fm:8000/live &
+killall -q mpv
+mpv --really-quiet http://8bit.fm:8000/live &
 
 
 

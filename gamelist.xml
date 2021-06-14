@@ -3,7 +3,7 @@
 	<folder>
 		<path>./RetrOrangePi/</path>
 		<name>RetrOrangePi</name>
-		<image>./RetrOrangePi/images/splash4.png</image>
+		<image>./RetrOrangePi/images/splash.png</image>
 	</folder>
 	<folder>
 		<path>./RetrOrangePi/Background_Music/</path>
@@ -11,121 +11,15 @@
 		<image>./RetrOrangePi/images/musicon.jpg</image>
 	</folder>
 	<folder>
-		<path>./RetrOrangePi/BashTool_ROPI_RCA/</path>
-		<name>Audio/Video Selector</name>
-		<image>./RetrOrangePi/images/av_selector.jpg</image>
-	</folder>
-	<folder>
-		<path>./RetrOrangePi/Power_Button/</path>
-		<name>Power Button Feature</name>
-		<image>./RetrOrangePi/images/powerbutton.jpg</image>
-	</folder>
-	<folder>
 		<path>./RetrOrangePi/ROPi_Radio/</path>
 		<name>RetrOrangePi Radio</name>
 		<image>./RetrOrangePi/images/ropiradio.png</image>
 	</folder>
-	<folder>
-		<path>./RetrOrangePi/kodi/</path>
-		<name>Kodi Krypton 17.4</name>
-		<image>./RetrOrangePi/kodi.png</image>
-	</folder>
-	<game>
-		<path>./RetrOrangePi/Power_Button/Shutdown.sh</path>
-		<name>Shutdown</name>
-		<desc>Set power button to turn off the system. </desc>
-		<image>./RetrOrangePi/images/shutdown.png</image>
-	</game>
-	<game>
-		<path>./RetrOrangePi/Power_Button/Shutdown_enabled.sh</path>
-		<name>Shutdown - enabled</name>
-		<desc>Power button set to turn off the system. </desc>
-		<image>./RetrOrangePi/images/shutdown.png</image>
-	</game>
-	<game>
-		<path>./RetrOrangePi/Power_Button/Reboot.sh</path>
-		<name>Reboot</name>
-		<desc>Set power button to reboot the system. </desc>
-		<image>./RetrOrangePi/images/reboot.png</image>
-	</game>
-	<game>
-		<path>./RetrOrangePi/Power_Button/Reboot_enabled.sh</path>
-		<name>Reboot - enabled</name>
-		<desc>Power button set to reboot the system. </desc>
-		<image>./RetrOrangePi/images/reboot.png</image>
-	</game>
-	<game>
-		<path>/home/pi/RetroPie/retropiemenu/RetrOrangePi/Power_Button/Restart.sh</path>
-		<name>Restart</name>
-		<desc>Set power button to restart the system, without rebooting. Useful to unfreeze the system.</desc>
-		<image>./RetrOrangePi/images/restart.png</image>
-	</game>
-	<game>
-		<path>./RetrOrangePi/Power_Button/Restart_enabled.sh</path>
-		<name>Restart - enabled</name>
-		<desc>Power button set to restart the system, without rebooting. </desc>
-		<image>./RetrOrangePi/images/restart.png</image>
-	</game>
-	<game>
-		<path>./filemanager.rp</path>
-		<name>File Manager</name>
-		<image>./icons/filemanager.png</image>
-	</game>
 	<game>
 		<path>./RetrOrangePi/Background_Music/Enable_music.sh</path>
 		<name>Enable BG music</name>
 		<desc>Turn on background music. Copy your tunes to ~/RetroPie/music folder. </desc>
 		<image>./RetrOrangePi/images/musicon.jpg</image>
-	</game>
-	<game>
-		<path>./bluetooth.rp</path>
-		<name>Bluetooth</name>
-		<image>./icons/bluetooth.png</image>
-	</game>
-	<game>
-		<path>./configedit.rp</path>
-		<name>Configuration Editor</name>
-		<image>./icons/configedit.png</image>
-	</game>
-	<game>
-		<path>./esthemes.rp</path>
-		<name>ES Themes</name>
-		<image>./icons/esthemes.png</image>
-	</game>
-	<game>
-		<path>./retroarch.rp</path>
-		<name>Retroarch</name>
-		<image>./icons/retroarch.png</image>
-	</game>
-	<game>
-		<path>./retronetplay.rp</path>
-		<name>Retroarch NetPlay</name>
-		<image>./icons/retronetplay.png</image>
-	</game>
-	<game>
-		<path>./rpsetup.rp</path>
-		<name>RetroPie-Setup</name>
-		<image>./icons/rpsetup.png</image>
-	</game>
-	<game>
-		<path>./runcommand.rp</path>
-		<name>Run Command Configuration</name>
-		<image>./icons/runcommand.png</image>
-	</game>
-	<game>
-		<path>./showip.rp</path>
-		<name>Show IP</name>
-		<image>./icons/showip.png</image>
-	</game>
-	<game>
-		<path>./splashscreen.rp</path>
-		<name>Splash Screens</name>
-		<image>./icons/splashscreen.png</image>
-	</game>
-	<game>
-		<path>./log.rp</path>
-		<name>Run Command Log</name>
-		<image>./icons/log.png</image>
 	</game>
 	<game>
 		<path>./RetrOrangePi/ROPi_Radio/RPGamers.sh</path>
@@ -157,13 +51,7 @@
 		<path>./RetrOrangePi/Update RetrOrangePi.sh</path>
 		<name>Update RetrOrangePi</name>
 		<desc>Update ROPi scripts and menu options. </desc>
-		<image>./RetrOrangePi/images/splash4.png</image>
-	</game>
-	<game>
-		<path>./RetrOrangePi/BashTool_ROPI_RCA/Tool/run.sh</path>
-		<name>Run AV selector</name>
-		<desc>Switch between HDMI, Analog 3.5mm RCA, video and audio. </desc>
-		<image>./RetrOrangePi/images/av_selector.jpg</image>
+		<image>./RetrOrangePi/images/splash.png</image>
 	</game>
 	<game>
 		<path>./RetrOrangePi/ROPi_Radio/Retro PC GAME Streaming Radio for Gyusyabu.sh</path>
@@ -179,11 +67,6 @@
 		<path>./RetrOrangePi/ROPi_Radio/8BitFM.sh</path>
 		<name>8BitFM</name>
 		<image>./RetrOrangePi/images/8BitFM.png</image>
-	</game>
-	<game>
-		<path>./RetrOrangePi/kodi/kodi.sh</path>
-		<name>kodi</name>
-		<image>./RetrOrangePi/images/kodi17.png</image>
 	</game>
 	<game>
 		<path>./RetrOrangePi/Background_Music/Disable_music.sh</path>

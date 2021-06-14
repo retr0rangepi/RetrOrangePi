@@ -1,5 +1,5 @@
 clear
-killall -q vlc
-cvlc -q http://radio.vgmradio.com:8040/stream &
+killall -q mpv
+mpv --really-quiet http://radio.vgmradio.com:8040/stream &
 
 
